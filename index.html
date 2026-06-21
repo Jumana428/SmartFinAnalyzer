@@ -8,7 +8,7 @@
         /* --- CSS Reset & Variables --- */
    :root {
 
-  --bg-dark-blue: #6B7280;
+  --bg-dark-blue: #101010;
   --color-success: #10B981;
   --color-danger: #f87171;
   --bg-main: #141414;
@@ -239,7 +239,19 @@
         .chat-input { flex-grow: 1; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: var(--radius-md); outline: none; }
         .chat-input:focus { border-color: var(--accent-blue); }
         .btn-send { background: var(--accent-blue); color: white; padding: 0 1rem; border-radius: var(--radius-md); }
+.chat-input-wrapper input,
+#chat-input {
+    background-color: #0F1419 !important;
+    color: #E8E8E8 !important;
+    border: 1px solid #2D3748 !important;
+}
 
+.chat-input-wrapper input:focus,
+#chat-input:focus {
+    background-color: #111827 !important;
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
         .example-questions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
         .example-chip { font-size: 0.75rem; background: #e2e8f0; padding: 0.25rem 0.5rem; border-radius: 1rem; cursor: pointer; transition: background 0.2s; }
         .example-chip:hover { background: #cbd5e1; }
